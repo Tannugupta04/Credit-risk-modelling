@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: #fff;
+    padding: 30px 40px;
+    width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    margin: 15px 0;
+}
+
+button {
+    background: #1f2a7c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #162060;
+}
+
+/* Risk section */
+.risk-info {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.risk-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 12px 0;
+}
+
+/* P1–P4 badges */
+.risk-tag {
+    min-width: 45px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    confirmsize: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.p1 { background: #2ecc71; }   /* green */
+.p2 { background: #3498db; }   /* blue */
+.p3 { background: #f1c40f; color: #000; } /* yellow */
+.p4 { background: #e74c3c; }   /* red */
+
+.risk-text {
+    color: #333;
+    font-size: 15px;
+}

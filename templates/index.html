@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Risk Prediction System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card">
+
+    <h1>🏦 Credit Risk Prediction System</h1>
+    <p class="subtitle">
+        Upload customer data to predict loan approval risk using Machine Learning
+    </p>
+
+    <!-- Upload Form -->
+    <form method="POST" enctype="multipart/form-data">
+        <label class="file-label">📂 Upload Excel File (.xlsx)</label>
+        <input type="file" name="file" required>
+        <button type="submit">🔍 Upload & Predict</button>
+    </form>
+
+    <!-- Risk Categories -->
+    <div class="risk-info">
+        <h3>📊 Risk Categories (P1–P4)</h3>
+
+        <div class="risk-row">
+            <span class="risk-tag p1">P1</span>
+            <span class="risk-text">Very low risk, safest customers, high approval chance</span>
+        </div>
+
+        <div class="risk-row">
+            <span class="risk-tag p2">P2</span>
+            <span class="risk-text">Low risk, reliable customers, approval with normal checks</span>
+        </div>
+
+        <div class="risk-row">
+            <span class="risk-tag p3">P3</span>
+            <span class="risk-text">Medium risk, needs extra verification</span>
+        </div>
+
+        <div class="risk-row">
+            <span class="risk-tag p4">P4</span>
+            <span class="risk-text">High risk, likely default, usually rejected</span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
