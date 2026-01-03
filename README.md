@@ -51,22 +51,23 @@ The model helps financial institutions make **data-driven loan approval decision
   - EXE / Batch Prediction
 ## complete process
 
-┌──────────────┐ → ┌────────────────┐ → ┌────────────────────┐ → ┌──────────────────────┐
-│ Raw Data     │   │ Preprocessing  │   │ Feature Engineering │   │ Feature Selection     │
-│ (CS1, CS2,   │   │ -99999, nulls  │   │ Cat/Num Encoding   │   │ Chi², ANOVA, VIF     │
-│ Unseen)      │   │ Merge data     │   │ One-Hot, Ordinal   │   │                      │
-└──────────────┘   └────────────────┘   └────────────────────┘   └──────────────────────┘
+┌────────────┐ → ┌──────────────┐ → ┌──────────────────┐ → ┌─────────────────────┐
+│ Raw Data   │   │ Preprocess   │   │ Feature Engg.    │   │ Feature Selection   │
+│ CS1, CS2,  │   │ -99999/nulls │   │ Encoding         │   │ Chi², ANOVA, VIF   │
+│ Unseen     │   │ Merge data   │   │ OHE, Ordinal     │   │                     │
+└────────────┘   └──────────────┘   └──────────────────┘   └─────────────────────┘
                                                               ↓
 ┌──────────────────┐ → ┌──────────────────┐ → ┌──────────────────┐
 │ Model Training   │   │ Model Evaluation │   │ Model Selection  │
-│ DT, RF, XGBoost │   │ Acc, Prec, Rec   │   │ XGBoost Final    │
+│ DT, RF, XGB     │   │ Acc, Prec, Rec   │   │ XGBoost Final   │
 └──────────────────┘   └──────────────────┘   └──────────────────┘
                                                               ↓
 ┌──────────────────┐ → ┌──────────────────┐ → ┌──────────────────┐
 │ Hyperparameter   │   │ Unseen Prediction│   │ Deployment Ready │
-│ Tuning (XGB)     │   │ Risk (P1–P4)     │   │ Pickle / API /   │
-│                  │   │                  │   │ Web / EXE        │
+│ Tuning (XGB)     │   │ Risk (P1–P4)     │   │ Pickle / API /  │
+│                  │   │                  │   │ Web / EXE       │
 └──────────────────┘   └──────────────────┘   └──────────────────┘
+
 
 
 ---
