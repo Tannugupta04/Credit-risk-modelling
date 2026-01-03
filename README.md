@@ -50,23 +50,8 @@ The model helps financial institutions make **data-driven loan approval decision
   - Web Application
   - EXE / Batch Prediction
 ## complete process
+<img width="1214" height="1107" alt="Screenshot 2026-01-03 220118" src="https://github.com/user-attachments/assets/16aaef1e-0db6-4d46-955f-7d4242f94d7c" />
 
-┌────────────┐ → ┌──────────────┐ → ┌──────────────────┐ → ┌─────────────────────┐
-│ Raw Data   │   │ Preprocess   │   │ Feature Engg.    │   │ Feature Selection   │
-│ CS1, CS2,  │   │ -99999/nulls │   │ Encoding         │   │ Chi², ANOVA, VIF   │
-│ Unseen     │   │ Merge data   │   │ OHE, Ordinal     │   │                     │
-└────────────┘   └──────────────┘   └──────────────────┘   └─────────────────────┘
-                                                              ↓
-┌──────────────────┐ → ┌──────────────────┐ → ┌──────────────────┐
-│ Model Training   │   │ Model Evaluation │   │ Model Selection  │
-│ DT, RF, XGB     │   │ Acc, Prec, Rec   │   │ XGBoost Final   │
-└──────────────────┘   └──────────────────┘   └──────────────────┘
-                                                              ↓
-┌──────────────────┐ → ┌──────────────────┐ → ┌──────────────────┐
-│ Hyperparameter   │   │ Unseen Prediction│   │ Deployment Ready │
-│ Tuning (XGB)     │   │ Risk (P1–P4)     │   │ Pickle / API /  │
-│                  │   │                  │   │ Web / EXE       │
-└──────────────────┘   └──────────────────┘   └──────────────────┘
 
 
 
