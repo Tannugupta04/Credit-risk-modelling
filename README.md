@@ -1,4 +1,37 @@
+
 # 📌 Credit Risk Modelling – Machine Learning Project
+
+
+## 🔥 Business-Driven Risk Segmentation (Executive Summary)
+
+Built an **ML-based Credit Risk Segmentation System** that classifies customers into **P1–P4 risk categories**, enabling **data-driven and flexible loan approval decisions** aligned with business goals.
+
+### 🧭 Business Risk Appetite–Based Targeting
+The solution is designed around **business risk appetite**, allowing stakeholders to dynamically choose target customer segments based on growth objectives and risk tolerance:
+
+- **Low Risk Appetite** → Focus only on **P1**  
+  *(Safest customers, minimal default risk)*
+
+- **Moderate Risk Appetite** → Approve **P1–P3**  
+  *(Balanced approach between growth and risk)*
+
+- **High Risk Appetite** → Expand to **P1–P4**  
+  *(Aggressive growth strategy with higher revenue potential)*
+
+### 📊 Business Impact
+- Translated complex **machine learning outputs into actionable business strategies**
+- Enabled teams to **balance risk vs revenue** based on organizational and market goals
+- Provided flexibility to adapt loan approval policies without retraining the model
+
+### 🏗️ End-to-End Delivery
+Delivered the system as a **complete production-ready application**, covering:
+
+- Data preprocessing & statistical feature selection  
+- **XGBoost-based multi-class risk classification model**  
+- Robust unseen data prediction pipeline  
+- **Flask-based deployment** for real-world usability
+
+# Complete flow
 
 ## 🔍 Overview
 An end-to-end **Credit Risk Classification system** that predicts customer risk levels (**P1–P4**) using demographic, behavioral, and financial data.  
